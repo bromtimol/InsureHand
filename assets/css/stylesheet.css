@@ -1,0 +1,299 @@
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lucida Grande";
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    text-align: right;
+
+
+    background-image: url('../img/undraw_mobile_development_8gyo.svg');
+    background-position: left;
+    background-position-y: bottom;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    color: #5f5d60;
+
+}
+
+.top-wrapper h1 {
+
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+
+}
+
+.top-wrapper p {
+
+    margin-bottom: 3px;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+
+.btn-wrapper {
+    margin-right: 50px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.btn-wrapper p {
+    margin: 10px 0;
+    align-items: center;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: #05A1DA;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    width: 124px;
+    margin-top: 20px;
+}
+
+.header-left {
+    margin-top: 10px;
+    float: left;
+    color: #eee;
+}
+
+.header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+    line-height: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+}
+
+.lesson-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: auto;
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .lesson-wrapper {
+        flex-direction: column;
+    }
+
+    .flex-list li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 670px) {
+
+    /* Tetapkan flex-direction milik .flex-list */
+    .lesson-wrapper {
+        flex-direction: column;
+    }
+
+    /* Tetapkan margin dari .flex-list li ke 0 auto */
+    .flex-list li {
+        margin: 0px auto;
+    }
+
+}
+
+.heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+}
+
+.heading h2 {
+    font-weight: normal;
+}
+
+.lesson {
+    float: left;
+    width: 25%;
+}
+
+.lesson-icon {
+    position: relative;
+
+}
+
+.lesson-icon img {
+    width: 150px;
+    height: 200px;
+
+}
+
+.lesson-icon p {
+    font-weight: bold;
+}
+
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.heading h3 {
+    font-weight: normal;
+}
+
+.btnDownload {
+    width: 200px;
+}
+
+.btnDownload:hover {
+    width: 210px;
+}
+
+.message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.message {
+    padding: 10px 10px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+footer img {
+    width: 125px;
+}
+
+footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}
+
+footer {
+    padding-top: 30px;
+}
+
+.fmxcKI:invalid {
+    box-shadow: none;
+}
+
+.fmxcKI {
+    width: 25%;
+    color: #1242AF;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 1px 0px, rgba(0, 0, 0, 0.16) 0px 2px 3px 0px;
+    min-width: 80px;
+    height: 100%;
+    padding-top: 16px;
+    margin-top: 10px;
+
+}
+
+.box {
+    height: 200px;
+    z-index: 1;
+    position: relative;
+}
+
+.box:before,
+.box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: #05A1DA;
+}
+
+.box:after {
+    -webkit-mask:
+        radial-gradient(var(--r1, 100%) var(--r2, 80%) at top, white 79.5%, transparent 80%) left,
+        radial-gradient(var(--r1, 100%) var(--r2, 80%) at bottom, transparent 79.5%, white 80%) right;
+    mask:
+        radial-gradient(var(--r1, 100%) var(--r2, 80%) at top, white 79.5%, transparent 80%) left,
+        radial-gradient(var(--r1, 100%) var(--r2, 80%) at bottom, transparent 79.5%, white 80%) right;
+    -webkit-mask-size: 50.1% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 50.1% 100%;
+    mask-repeat: no-repeat;
+    background: white;
+}
